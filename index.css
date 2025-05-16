@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --color1: #1B1B1D;
+    --color2: #ffffff;
+    --color3: #09f;
+    --color4: #cacaca;
+    --color5: #414141;
+    --color6: #165986;
+}
+body{
+    background-color: #8d8d8d;
+
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+    .form-section h2{
+            padding: 5px;
+            text-align: center;
+        }
+    .form-section h4{
+            background-color: var(--color3);
+            border: 2px solid var(--color2);
+            padding: 10px 10px;
+            border-radius: 3px;
+            margin: 10px 0px 40px 0px;
+        }
+
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+    .form-group2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+    .form-group3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+
+label{
+    margin: 0px 0px 10px 0px;
+    align-self: flex-start;
+}
+
+input{
+    color: white;
+    padding: 5px 20px;
+    width: 90%;
+    margin: 0px 0px 30px 0px;
+    border: 1px solid var(--color4);
+    background-color: var(--color5);
+}
+    input:focus{
+        outline: none;
+        border: 1px solid var(--color2);
+    }
+
+button{
+    background-color: var(--color6);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    transition: 0.3s;
+    font-weight: bolder;
+}
+
+    button:hover{
+        background-color: var(--color3);
+        transition: 0.1s;
+    }
+
+    button:active{
+        transform: translateY(1px);
+    }
+
+
+.table-section{
+    width: 35%;
+    height: 20%;
+}
+
+    .table-section table{
+        width: 100%;
+        border-radius: 5px;
+        margin: 10px 0px;
+        display: block;
+        overflow-y: auto;
+        overflow-x: auto;
+        max-height: 217px;
+    }
+        .table-section thead {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+        }
+            .table-section th{
+                    font-weight: bolder;
+                    width: 10%;
+                    background-color: var(--color3);
+                    color: white;
+                    padding: 10px 20px;
+                    border: 1px solid white
+                }
+            .table-section td{
+                    color: white;
+                    width: 10%;
+                    background-color: var(--color5);
+                    padding: 10px 20px;
+                    border: 1px solid white
+                }
+                .table-section td:last-child{
+                        font-weight: bolder;
+                        background-color: rgb(100, 100, 100);
+                    }
+
+@media (max-width: 1550px ){
+        .table-section{
+        width: 70%;
+        }
+    }
+@media (max-width: 650px){
+    .table-section{
+    width: 100%;
+    }
+}
