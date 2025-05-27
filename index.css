@@ -94,7 +94,7 @@ input{
         border: 1px solid var(--color2);
     }
 
-button{
+.guardar-btn{
     background-color: var(--color6);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 4px;
@@ -102,19 +102,48 @@ button{
     cursor: pointer;
     transition: 0.3s;
     padding: 10px 20px;
-    margin: 10px 0px;
+    margin: 2px 0px;
     transition: 0.3s;
     font-weight: bolder;
 }
-
-    button:hover{
+    .guardar-btn hover{
         background-color: var(--color3);
         transition: 0.1s;
     }
 
-    button:active{
-        transform: translateY(1px);
-    }
+#eliminar-btn{
+    background-color: darkred;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin: 2px 0px;
+    transition: 0.3s;
+    font-weight: bolder;
+    width: 100%;
+}
+#eliminar-btn:hover{
+    background-color: red;
+}
+
+#modificar-btn{
+    background-color: darkorange;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+    margin: 2px 0px;
+    transition: 0.3s;
+    font-weight: bolder;
+    width: 100%;
+}
+#modificar-btn:hover{
+    background-color: orange;
+}
 
 
 .table-section{
@@ -156,6 +185,7 @@ button{
                         font-weight: bolder;
                         background-color: rgb(100, 100, 100);
                     }
+
 
 @media (max-width: 1550px ){
         .table-section{
