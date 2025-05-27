@@ -12,6 +12,8 @@
     --color4: #cacaca;
     --color5: #414141;
     --color6: #165986;
+    --aprobado: green;
+    --reprobado: darkred;
 }
 body{
     background-color: #8d8d8d;
@@ -25,6 +27,18 @@ main {
     width: 100%;
     height: 90vh;
 }
+
+.stats p{
+    color: var(--color6);
+}
+
+.stats p:nth-child(2){
+    color: var(--aprobado);
+}
+.stats p:nth-child(3){
+    color: var(--reprobado);
+}
+
 
 .form-section {
     display: flex;
@@ -75,6 +89,14 @@ main {
         width: 90%;
         height: 100%;
     }
+    .form-group4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
 
 label{
     margin: 0px 0px 10px 0px;
@@ -111,6 +133,15 @@ input{
         transition: 0.1s;
     }
 
+#actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 #eliminar-btn{
     background-color: darkred;
     border: 1px solid rgb(255, 255, 255);
@@ -118,8 +149,7 @@ input{
     color: white;
     cursor: pointer;
     transition: 0.3s;
-    padding: 10px 20px;
-    margin: 2px 0px;
+    padding: 10px 5px;
     transition: 0.3s;
     font-weight: bolder;
     width: 100%;
@@ -135,8 +165,7 @@ input{
     color: white;
     cursor: pointer;
     transition: 0.3s;
-    padding: 10px 20px;
-    margin: 2px 0px;
+    padding: 10px 5px;
     transition: 0.3s;
     font-weight: bolder;
     width: 100%;
@@ -177,15 +206,19 @@ input{
             .table-section td{
                     color: white;
                     width: 10%;
-                    background-color: var(--color5);
-                    padding: 10px 20px;
+                    background-color: var(--color5);;
                     border: 1px solid white
                 }
                 .table-section td:last-child{
                         font-weight: bolder;
                         background-color: rgb(100, 100, 100);
+                        border: 1px solid white;
+                        border-style: dashed;
                     }
 
+#tr1{
+    padding: 10px 10px;
+}
 
 @media (max-width: 1550px ){
         .table-section{

@@ -12,6 +12,11 @@
             <section class="form-section">
                 <h2>Seguimiento de Notas de Estudiantes</h2>
                 <h4 id="average">Promedio General del Curso: <span>n/a</span></h4>
+                <div id="stats" class="stats">
+                    <p>Total de estudiantes: <span id="total">0</span></p>
+                    <p>Porcentaje aprobados: <span id="aprobados">0%</span></p>
+                    <p>Porcentaje reprobados: <span id="reprobados">0%</span></p>
+                </div>
                 <article class="form-group">
                     <label for="name"> Nombre:</label>
                     <input type="text" id="name" required placeholder="Ingrese nombre del alumno">
@@ -26,6 +31,10 @@
                     <label for="grade">Nota:</label>
                     <input type="number" id="grade" step="0.1" min="1" max="7" required placeholder="Ingrese nota del 1.0 al 7.0">
                 </article>
+                <article class="form-group4">
+                    <label for="date">Fecha:</label>
+                    <input type="date" id="date" required>
+                </article>
                 <button class="guardar-btn" type="submit">Guardar Alumno</button>
             </section>
         </form>
@@ -37,6 +46,7 @@
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Nota</th>
+                        <th>Fecha</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
